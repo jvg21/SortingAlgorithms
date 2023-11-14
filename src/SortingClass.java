@@ -24,12 +24,13 @@ public class SortingClass {
                     sortedArray[j+1] = sortedArray[j];
                     sortedArray[j] = temp;
                     numTrades++;
+                    showArray(sortedArray);
                 }
             }
             if (numTrades == 0){
                 break;
             }
-            showArray(sortedArray);
+
 
         }
         System.out.println("-------------------------------------------------------------");
@@ -84,12 +85,10 @@ public class SortingClass {
         for (int j = low; j < high; j++) {
             if (array[j] < pivot) {
                 i++;
-
                 int temp = array[i];
                 array[i] = array[j];
                 array[j] = temp;
                 showArray(array);
-
             }
         }
 
